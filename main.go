@@ -8,7 +8,7 @@ import (
 )
  func main() {
 	 // Init Router
-	 //gin.SetMode(gin.ReleaseMode)
+	 gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	// Route Handlers / Endpoints
 	routes.Routes(router)
