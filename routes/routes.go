@@ -59,6 +59,6 @@ log.Println(stringTxt,"\n",bovar)
 	}
 }
 func Routes(router *gin.Engine) {
-	router.GET("/rude", checkFunction)
+	router.POST("/rude", checkFunction)
 	
 }
