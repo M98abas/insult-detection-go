@@ -13,7 +13,7 @@ type takeStringData struct {
     StrData    string `json:"stringtext" binding:"required"`
 }
 
-func welcome(c *gin.Context) {
+func checkFunction(c *gin.Context) {
 	var result bool = false
 	var requestBody takeStringData
 	stringTxt,bovar :=c.GetPostForm("stringtext")
@@ -59,6 +59,6 @@ log.Println(stringTxt,"\n",bovar)
 	}
 }
 func Routes(router *gin.Engine) {
-	router.GET("/", welcome)
+	router.GET("/", checkFunction)
 	
 }
